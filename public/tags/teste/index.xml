@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Agency</title>
-    <link>https://example.org/</link>
-    <description>Recent content on Agency</description>
+    <title>teste on Agency</title>
+    <link>https://example.org/tags/teste/</link>
+    <description>Recent content in teste on Agency</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Apr 2019 20:20:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.org/tags/teste/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://example.org/post/2019-04-03-postagem-de-exemplo/</guid>
       <description>Esta é uma postagem placeholder, criada unicamente para testar as funções desse site. Ela poderá ser altamente modificada bem como ser desativada/deletada assim que se esgotarem os testes necessários. Obrigado por ler até aqui :)</description>
-    </item>
-    
-    <item>
-      <title>Sobre o projeto</title>
-      <link>https://example.org/page/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.org/page/about/</guid>
-      <description></description>
     </item>
     
   </channel>
