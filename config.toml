@@ -1,7 +1,7 @@
 # Site settings
-baseurl = "https://matheusbsa.github.io"
+baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "Matheus Barbosa"
+title = "Agency"
 theme = "hugo-agency-theme"
 
 # Enter your tracking code to enable Google Analytics
@@ -17,9 +17,9 @@ googleAnalytics = ""
 
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
-  name = "Matheus Barbosa Souza"
-  description = "Estudante de Ciência da Computação"
-  email = "mbscbsjbs@gmail.com"
+  name = "Your name"
+  description = "Your description"
+  # email = "your@email.com"
 
   # Link custom assets relative to /static
   custom_css = []
@@ -46,132 +46,122 @@ googleAnalytics = ""
 
   # Navigation
   [params.navigation]
-    brand = "Matheus Barbosa"
+    brand = "The Agency"
     # Optional logo as brand stored in img/
     #logo = "logo.svg"
-    services = "ESCOLARIDADE"
-    about = "SOBRE"
-    contact = "CONTATO"
+    services = "Services"
+    portfolio = "Portfolio"
+    about = "About"
+    team = "Team"
+    contact = "Contact"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
     # Use the weight attribute to order your custom links. Uncomment the example
     # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+      url = "http://gohugo.io"
+      name = "External link"
+      weight = 10
 
 
   # Hero section
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "SEJA BEM VINDO!"
-    subtitle = "Vamos Trabalhar Juntos!"
-    buttonText = "CONTE-ME MAIS"
+    title = "Welcome To Our Studio!"
+    subtitle = "It's nice to meet you"
+    buttonText = "Tell me more"
 
 
   # Services section
   [params.services]
     enable = true
-    title = "Escolaridade"
-    subtitle = "Meus cursos em geral."
+    title = "Services"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
 
     [[params.services.row]]
 
     [[params.services.row.list]]
-      icon = "fa-university"
-      title = "UNIPAC"
-      description = """Bacharel em Ciência da Computação  
-      2017 - 2021"""
-      url = "https://barbacena.site.unipac.br/"
+      icon = "fa-shopping-cart"
+      title = "E-Commerce"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      url = "#"
 
     [[params.services.row.list]]
-      icon = "fa-code"
-      title = "UDEMY"
-      description = """Desenvolvimento Web Completo  
-      2019 - Cursando"""
-      url = "https://udemy.com"
+      icon = "fa-laptop"
+      title = "Responsive Design"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      url = "#"
 
     [[params.services.row.list]]
-      icon = "fa-desktop"
-      title = "Curso em Vídeo"
-      description = """Programação Completa com Python  
-      2018 - 2019"""
-      url = "https://udemy.com"
-
-    [[params.services.row.list]]
-      icon = "fa-database"
-      title = "UDEMY"
-      description = """Banco de Dados MySQL  
-      2018 - 2019"""
-      url = "https://udemy.com"
-
-    [[params.services.row.list]]
-      icon = "fa-git"
-      title = "UDEMY"
-      description = """Git e Github Completo  
-      2018 - 2019"""
-      url = "https://udemy.com"
-
-    [[params.services.row.list]]
-      icon = "fa-book"
-      title = "BOOK"
-      description = """Automatize Tarefas Maçantes com Python  
-      2019 - Cursando"""
-      url = "https://automatetheboringstuff.com/"
+      icon = "fa-lock"
+      title = "Web"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      url = "#"
 
   # Portfolio section
   [params.portfolio]
-    enable = false
+    enable = true
     # All projects defined in their own files. You can find example projects
     # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
     # at the root of this Hugo site.
     # For more informtion take a look at the README.
-   title = "Portfolio"
+    title = "Portfolio"
     subtitle = "Lorem ipsum dolor sit amet consectetur."
 
-  #  [params.portfolio.modal]
-  #    client = "Client"
-  #    date = "Date"
-  #    category = "Category"
-  #    buttonText = "Close project"
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
 
 
-  # About section
+    # About section
   [params.about]
     enable = true
-    title = "SOBRE MIM"
-    subtitle = "Um pouco sobre quem eu sou."
-    endpoint = "Be part<br>of my<br>story!!"
-    # The events will be listed from thse top to the bottom.
+    title = "About"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    endpoint = "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
     # All images are stored under 'static/img/about'.
     # Replace them with your own.
     [[params.about.events]]
       img = "1.jpg"
-      # date = ""
-      title = "Quem eu sou"
-      description = "Entusiasta em Python, DevWeb e Linux. Sou uma pessoa dinâmica e pró-ativa, disposta sempre a aprender, com facilidade para o aprendizado e trabalho em equipe. Busco sempre novas responsabilidades e experiências e procuro oportunidades em empresas onde posso estar sempre ampliando os meus conhecimentos."
+      date = "2009-2011"
+      title = "Our Humble Beginnings"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
     [[params.about.events]]
       img = "2.jpg"
-      #date = "March 2011"
-      title = "Hobbies"
-      description = "Eu amo vídeo-game e matemática, mas o que mais eleva a minha dopamina é sentar na cadeira e perder a noção do tempo enquanto escrevo código."
+      date = "March 2011"
+      title = "An Agency is Born"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
     [[params.about.events]]
       img = "3.jpg"
-      #date = "December 2012"
-      title = "Sem fins lucrativos"
-      description = """Eu contribuo para o site Open Source [osprogramadores.com](https://osprogramadores.com/) no repositório do GitHub, verificando ortografia e resolvendo os desafios propostos, ocupando atualmente a [5º posição](https://osprogramadores.com/scores/) no hi-score do site.  
-              Membro ativo do site [StackOverflow](https://pt.stackoverflow.com/users/122392/whoismatt), atualmente com 300+ pontos de reputação."""
+      date = "December 2012"
+      title = "Our Humble Beginnings"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
-    #[[params.about.events]]
-    #  img = "4.jpg"
-    #  #date = "July 2014"
-    #  title = "Phase Two Expansion"
-    #  description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+    [[params.about.events]]
+      img = "4.jpg"
+      date = "July 2014"
+      title = "Phase Two Expansion"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
 
   # Team section
   [params.team]
-    enable = false
+    enable = true
     # Possibility to center items
     #center = true
     title = "Our amazing team"
@@ -229,13 +219,31 @@ She worked at Pied Piper for years until they went belly up."""
       # Optional client title specifying the involvement
       #title = "Used and trusted by"
 
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        logo = "envato.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "designmodo.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "themeforest.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "creative-market.jpg"
+        link = "#"
 
   # Contact section
   [params.contact]
     enable = true
-    title = "CONTATE-ME"
-    subtitle  = "CASO QUEIRA TROCAR UMA IDEIA."
-    buttonText = "ENVIAR"
+    title = "Contact us"
+    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    buttonText = "Send message"
     # netlify = true
 
     # Since this template is static, the contact form uses www.formspree.io as a
@@ -256,31 +264,31 @@ She worked at Pied Piper for years until they went belly up."""
     # add some custom JS script to finish the implementation.
     # postURL = "https://example.com/mailout/"
 
-    email = "mbscbsjbs@gmail.com"
+    email = "your@email.com"
 
     # Success and error message overwrite for async contact form
-    thanks = "Obrigado pelo seu contato!."
-    error = "Mensagem não pode ser enviada. Por favor contate-me em matheusb635@gmail.com."
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
 
     [params.contact.captcha]
-      sitekey = "6LfbJZ8UAAAAAFKfDFwoHUz9L4xva10KMHBeGOUI"
+      # sitekey = ""
 
     # 'warning' defines error messages for invalid inputs
     [params.contact.form.name]
-      text = "Seu Nome *"
-      warning = "Por favor informe seu nome."
+      text = "Your Name *"
+      warning = "Please enter your name."
 
     [params.contact.form.email]
-      text = "Seu Email *"
-      warning = "Por favor informe seu email."
+      text = "Your Email *"
+      warning = "Please enter your email address."
 
-    [params.contact.form.subject]
-      text = "Assunto *"
-      warning = "Por favor informe seu assunto."
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
 
     [params.contact.form.message]
-      text = "Sua Mensagem *"
-      warning = "Por favor entre com uma messagem."
+      text = "Your Message *"
+      warning = "Please enter a message."
 
       # Add optional form fields to identify contact forms
       #[[params.contact.form.hidden]]
@@ -297,22 +305,24 @@ She worked at Pied Piper for years until they went belly up."""
     copyright = "Published under the Apache License 2.0."
 
     [[params.footer.social]]
-      icon = "fa-github"
-      link = "https://github.com/WhoisBsa"
-      title = "Github"
+      icon = "fa-twitter"
+      link = "#"
+      title = "Twitter"
 
     [[params.footer.social]]
-      icon = "fa-stack-overflow"
-      link = "https://pt.stackoverflow.com/users/122392/whoismatt"
-      title = "StackOverflow"
+      icon = "fa-facebook"
+      link = "#"
+      title = "Facebook"
 
     [[params.footer.social]]
       icon = "fa-linkedin"
-      link = "https://www.linkedin.com/in/whoisbsa/"
+      link = "#"
       title = "LinkedIn"
 
-    [[params.footer.social]]
-      icon = "fa-twitter"
-      link = "https://twitter.com/whoisbsa"
-      title = "Twitter"
+    [[params.footer.quicklinks]]
+      text = "Privacy Policy"
+      link = "#"
 
+    [[params.footer.quicklinks]]
+      text = "Terms of Use"
+      link = "#"
