@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://whoisbsa.github.io"
+baseurl = "https://matheusbsa.github.io"
 languageCode = "pt-br"
 title = "Matheus Barbosa"
 theme = "hugo-agency-theme"
